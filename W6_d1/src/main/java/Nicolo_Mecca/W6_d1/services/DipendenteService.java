@@ -38,6 +38,7 @@ public class DipendenteService {
         newDipendente.setEmail(body.email());
         newDipendente.setImgProfilo("https://ui-avatars.com/api/?name=" +
                 body.nome() + "+" + body.cognome());
+        newDipendente.setPassword(body.password());
         return dipendenteRepository.save(newDipendente);
     }
 
